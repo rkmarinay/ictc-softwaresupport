@@ -271,11 +271,11 @@
 		
 		if ($stat=='All')
 		{
-		$query="SELECT * FROM requests WHERE status!='Completed' ORDER BY id DESC";
+		$query="SELECT * FROM requests WHERE status!='Completed' AND status!='Disapproved' ORDER BY id DESC";
 		}
 		
 		else{
-			$query="SELECT * FROM requests WHERE status !='Completed' AND status='$stat' ORDER BY id DESC";
+			$query="SELECT * FROM requests WHERE status !='Completed' AND status!='Disapproved' AND status='$stat' ORDER BY id DESC";
 		}
 		$result=mysql_query($query);
 		$num_results=mysql_num_rows($result);
