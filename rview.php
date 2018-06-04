@@ -264,7 +264,7 @@
 		?>
 		</button>
 	  <div class="dropdown-content">
-			<a href="login.html">Log Out</a>
+			<a href="index.php">Log Out</a>
 		</div>
 		</div>
 	
@@ -283,7 +283,7 @@
 
 	<br>
 <?php
-	echo "<a href='requestor.php?name=$name&&uname=$uname'> Go back to inbox<br> </a>"; ?>
+	echo "<a href='requestor.php'> Go back to inbox<br> </a>"; ?>
 	<div class="viewreq">
 	<?php
 		$id = $_GET['id'];
