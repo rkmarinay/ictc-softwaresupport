@@ -221,7 +221,7 @@
 				</div>
 				
 				<div class="w3-third">
-				<a href="faqs.html">
+				<a href="faqs.php">
 					<div class="w3-card w3-container w3-button" style="min-height:300px;text-decoration:none">
 					<br><h3>FAQs</h3><br>
 					<img src="faqs.png" style="width:60%">

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<title>View Requests</title>
 <head>
     <link rel="stylesheet" href="custom.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
