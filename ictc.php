@@ -259,7 +259,7 @@
 		echo "<select name='stat' style='width:160px'>";
 		echo "<option value= $stat' type='hidden'> $stat </option>";
 		echo "<option value='All'> All </option>";
-		echo "<option value='Queued'> Queued </option>";
+		echo "<option value='Queued'> Approved </option>";
 		echo "<option value='Pending'> Pending </option>";
 		echo "<option value='Disapproved'> Disapproved </option></select>";
 		echo "<button style='background-color:#4CAF50;border:none;width:50px;margin-left:10px'> OK </button><br>";
@@ -294,7 +294,7 @@
 			
 			if($row['ictcstatus'] == 'Queued')
 			{
-			echo "<div class='stat' style='background-color:#323CDA'><strong>".$row['ictcstatus']."</strong></div>";
+			echo "<div class='stat' style='background-color:#323CDA'><strong>Approved</strong></div>";
 			}
 			
 			if($row['ictcstatus'] == 'Disapproved')

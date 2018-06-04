@@ -285,7 +285,7 @@
 			
 			if($row['status'] == 'Queued')
 			{
-			echo "<div class='stat' style='background-color:#323CDA'><strong>".$row['status']."</strong></div>";
+			echo "<div class='stat' style='background-color:#323CDA'><strong>Approved</strong></div>";
 			}
 			
 			echo "<div class='request'>".$row['request']."</div>";

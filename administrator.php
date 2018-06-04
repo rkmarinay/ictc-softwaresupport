@@ -321,7 +321,7 @@
 			
 			if($row['ssstatus'] == 'Queued')
 			{
-			echo "<div class='stat2' style='background-color:#323CDA'><strong>".$row['ssstatus']."</strong></div>";
+			echo "<div class='stat2' style='background-color:#323CDA'><strong>Performed</strong></div>";
 			}
 			
 			if($row['ssstatus'] == 'Disapproved')
@@ -342,7 +342,7 @@
 			
 			if($row['ictcstatus'] == 'Queued')
 			{
-			echo "<div class='stat' style='background-color:#323CDA'><strong>".$row['ictcstatus']."</strong></div>";
+			echo "<div class='stat' style='background-color:#323CDA'><strong>Approved</strong></div>";
 			}
 			
 			if($row['ictcstatus'] == 'Disapproved')
@@ -358,7 +358,7 @@
 			
 			if($row['status'] == 'Queued')
 			{
-			echo "<div class='stat' style='background-color:#323CDA'><strong>".$row['status']."</strong></div>";
+			echo "<div class='stat' style='background-color:#323CDA'><strong>Approved</strong></div>";
 			}
 			
 			if($row['status'] == 'Disapproved')
