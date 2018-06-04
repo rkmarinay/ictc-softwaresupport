@@ -16,7 +16,7 @@
 		
 		else
 		{
-			$query="UPDATE requests SET status='Disapproved', comments='$_POST[comments]' WHERE id = '$id'";
+			$query="UPDATE requests SET status='Disapproved', ictcstatus='Disapproved', ssstatus='Disapproved', comments='$_POST[comments]' WHERE id = '$id'";
 			$is_query_successful=mysql_query($query);
 			if($is_query_successful)
 			{ header("location:viewrequest.php?id=$id");} 
