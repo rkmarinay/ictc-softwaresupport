@@ -204,16 +204,7 @@
 					<div class="w3-card w3-container w3-button" style="min-height:300px;text-decoration:none">
 					<br><h3>View Request Status <span class="badge">
 					
-					<?php
-					include 'dbconnect.inc';
-
-					$query="SELECT * FROM requests WHERE user='$username' AND ssstatus = 'Queued'";
-					$result=mysql_query($query);
-					$num_results=mysql_num_rows($result);
-					
-					echo $num_results;
-					
-					?>
+					1
 					</span></h3><br>
 					<img src="status.png" style="width:50%">
 					</div>
