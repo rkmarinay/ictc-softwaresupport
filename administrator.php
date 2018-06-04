@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<title>Administrator</title>
 <head>
     <link rel="stylesheet" href="custom.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -269,7 +270,6 @@
 <div class="main-body">
 	
 	<br>
-	<a href="admin_addrequest.php" style="text-decoration:none"><button class="block">Add request</button></a>
 	<br>
 	<?php
 		include 'dbconnect.inc';
