@@ -321,6 +321,7 @@
 		
 		while($row=mysql_fetch_assoc($result))
 		{	
+			echo "<a href='rview.php?id={$row['id']}'style='text-decoration:none;'>";
 			echo "<div class='rows'>";
 			
 			if($row['status'] == 'Pending')

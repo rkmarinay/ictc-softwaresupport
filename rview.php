@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
+<title>View Request</title>
 <head>
     <link rel="stylesheet" href="custom.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href="local-fonts/Orbitron/Orbitron.css" rel="stylesheet">   
 	<link href="local-fonts/Open-Sans/Open-Sans.css" rel="stylesheet">
 </head>
+
+ <?php 
+		session_start();
+		include 'dbconnect.inc';  
+	?>
+	
     
     <style>
         body{
@@ -252,9 +259,8 @@
 		<button class="dropbtn">
 		
 		<?php
-		echo $_GET['name'];
-		$name=$_GET['name'];
-		$uname=$_GET['uname'];
+			$uname=$_SESSION['uname'];
+		echo $_SESSION['name'];
 		?>
 		</button>
 	  <div class="dropdown-content">
@@ -265,7 +271,7 @@
 	<ul>
 	  	<ul>
 		<?php
-	 echo "<li style='padding:5px'><a href='home.php?name=$name&&uname=$uname'><img src='home.png' style='width:40px;margin-left:10px;'></a></li>";
+	 echo "<li style='padding:5px'><a href='home.php'><img src='home.png' style='width:40px;margin-left:10px;'></a></li>";
 	  ?>
 	</ul>
 	</ul>
