@@ -270,11 +270,11 @@
 		
 		if ($stat=='All')
 		{
-		$query="SELECT * FROM requests WHERE status !='Disapproved' AND status !='Pending' ORDER BY id DESC";
+		$query="SELECT * FROM requests WHERE status !='Pending' ORDER BY id DESC";
 		}
 		
 		else{
-			$query="SELECT * FROM requests WHERE status !='Disapproved' AND status !='Pending' AND ictcstatus='$stat' ORDER BY id DESC";
+			$query="SELECT * FROM requests WHERE status !='Pending' AND ictcstatus='$stat' ORDER BY id DESC";
 		}
 
 		$result=mysql_query($query);
