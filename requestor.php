@@ -115,7 +115,7 @@
 			float:left;
 			text-align:left;
 			width:100px;
-			margin-left:120px;
+
 			padding-top:5px;
 		} 
 		
@@ -327,6 +327,11 @@
 				echo "<strong style='color:red;margin-left:50px;font-size:20px'></strong>";
 			}
 			else { echo "<strong style='color:#f2f2f2;margin-left:50px;font-size:20px'>&#8226;</strong>";}
+			
+			if ($row['ssstatus']== 'Queued')
+			{
+			echo "<a href='process7.php?id={$row['id']}' style='text-decoration:none'> <img src='checked.png' width=24px style='margin-bottom:6px;'> </a>";
+			}
 			
 			if($row['status'] == 'Pending')
 			{
